@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>전국노래자랑</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="${R}res/common.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- jQuery -->
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="<c:url value='/js/common.js'/>" charset="utf-8"></script>
+
+
+</head>
+
+<body>
+<script type="text/javascript" src="javascript/common.js"></script>
+	<div id="wrap">
+		<!--헤더: 내비게이션 & 배너-->
+		<header id="header">
+			<!--내비게이션-->
+			<nav class="navbar navbar-expand-sm navbar-dark bg-primary" style="z-index: 999; opacity: 0.9;">
+				<div class="container-fluid">
+					
+					<!--메인 링크-->
+					<a class="navbar-brand" href="main.html">너의 18번을 들려줘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| </a>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarColor01">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item"><!--메인 링크-->
+								<a class="nav-link" href="main.html">홈<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item"><!--공지 링크-->
+								<a class="nav-link" href="notice.html">공지사항</a>
+							</li>
+							<li class="nav-item"><!--차트 링크-->
+								<a class="nav-link" href="chart.html">인기차트</a>
+							</li>
+							<li class="nav-item dropdown active"><!--커뮤니티 링크-->
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="best.html" role="button" aria-haspopup="true" aria-expanded="false">커뮤니티</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="best.html">베스트 게시판</a></li>
+									<li><a href="freeboard.html">자유 게시판</a></li>
+									<li><a href="tipboard.html">팁 게시판</a></li>
+									<li><a href="recommend.html">노래 추천</a></li>
+									<li><a href="imSinger.html">전국 노래 자랑</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown"><!--정보 링크-->
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="karaMap.html" role="button" aria-haspopup="true" aria-expanded="false">정보</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="karaMap.html">노래방 맵</a></li>
+									<li><a href="relative.html">관련 사이트</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li class="nav-item">
+								<a class="nav-link login" href="login.html" style="color: white; border: 1px solid #585858;padding: 10px 15px 10px 15px;">로그인</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<!--배너 이미지-->
+			<div class=image-container style="position: absolute; top: 0; background: black;"><img src="img/hello2.png"></div>
+
+		</header>
+
+		<!--본문-->
+		<section>
+			<div id="content">
+				<div style="text-align: center; padding-top: 150px;">
+
+					<!--게시판 내비게이션-->
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link" href="best.html">베스트</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="freeboard.html">자유 게시판</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="tipboard.html">팁 게시판</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="recommend.html">노래 추천</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="imSinger.html">전국 노래 자랑</a>
+						</li>
+					</ul>
+				</div>
+
+				<!--글 본문-->
+				<div class="container">
+
+					<div class="jumbotron" style="margin-top: 50px;">
+						<h4 style="padding-left: 5px;">전국 노래 자랑</h4>
+						<br>
+						<h1 class="display-5">제가 노래부르는 모습입니다.</h1>
+						<br>
+						<!--글 헤더-->
+						<div>
+							<p class="lead-2"><a href="#">나도가수다</a></p>
+							<p class="lead" style="margin-right: 10px;float: right;"><img src="img/view.png"/>&nbsp;17</p>
+							<p class="lead" style="margin-right: 20px;float: right;"><img src="img/date.png"/>&nbsp;19.09.15</p>
+						</div>
+
+						<hr class="my-4" style="clear: both">
+
+						<!--내용-->
+						<div class="lead-3" style="width: 100%">
+							<p>제가 열창하는 모습을 친구가 몰래 찍었습니다. 조금 부끄럽네요ㅎㅎ</p><!--<p>본문 내용</p>-->
+							<br>
+							<br>
+							<p style="text-align: center;"><img src="img/WH.jpg" style="width: 700px;"></p>
+							<br>
+							<br>
+						</div>
+						
+						<!--추천-->
+						<div class="lead" style="text-align: center; margin-bottom: 50px;">
+							<a class="btn btn-primary" href="#" role="button"><img src="img/likey.png">&nbsp;추천</a>
+							<div class="btn" style="border: 1px solid grey; background: white; color: grey">&nbsp;+0</div>
+						</div>
+						
+						<!--수정삭제-->
+						<div class="lead" style="text-align: center; margin-bottom: 80px; float: right;">
+							<button type="button" class="btn btn-primary btn-sm" style="background: #fff; color: #070707; border: 1px solid grey;" data-modify-board>수정</button>
+							<button type="button" class="btn btn-primary btn-sm" style="background: #fff; color: #070707; border: 1px solid grey;" data-delete-board>삭제</button>
+						</div>
+
+						<hr class="my-4" style="clear: both;">
+
+						<!--댓글-->
+						<p class="lead-2" style="">댓글</p>
+						<hr class="my-4" style="clear: both;margin-bottom: -100px">
+						
+						<!--댓글 목록-->
+						<div>
+							<ul class="reply_ul">
+								<li>
+									<div class="reply">
+										<p class="user_id">
+											<a href="#">닉넴뭐하지</a>
+											<span>2019.09.17</span>
+											<!--댓글 삭제-->
+											<span style="float: right;"><a href="#" style="font-weight: 200" data-delete-comment>삭제</a></span>
+										</p>
+										<div class="reply_text">여기 허언증 게시판인가요?</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						
+						<!--페이지네이션-->
+						<div class="text-center">
+							<ul class="pagination pagination-sm" style="margin-top: 20px;">
+								<li class="page-item disabled">
+									<a class="page-link" href="#">&laquo;</a>
+								</li>
+								<li class="page-item active">
+									<a class="page-link" href="#">1</a>
+								</li>
+								<li class="page-item disabled">
+									<a class="page-link" href="#">&raquo;</a>
+								</li>
+							</ul>
+						</div>
+
+						<!--댓글 입력 폼-->
+						<div class="txar_wrap">
+							<div class="bottom_txar">
+								<textarea name="comment" cols="30" rows="10" class="txar" placeholder=""></textarea>
+
+								<button type="submit" name="" class="btn btn-primary" style="float: left; width: 100%">등록</button>
+							</div>
+						</div>
+
+
+					</div>
+					
+				</div>
+			</div>
+
+
+
+		</section>
+
+		<!--푸터-->
+		<footer id="footer">
+			<br>
+			<br>
+			<p><a href="#" style="text-decoration: none;">▲ TOP</a></p>
+			<p>Copyright  © 너의 18번을 들려줘 </p>
+		</footer>
+
+
+	</div>
+
+
+</body>
+</html>

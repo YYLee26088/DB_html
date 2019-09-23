@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>유저페이지</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="javascript/common.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- jQuery -->
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="<c:url value='/js/common.js'/>" charset="utf-8"></script>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!--헤더: 내비게이션 & 배너-->
+		<header id="header">
+			<!--내비게이션-->
+			<nav class="navbar navbar-expand-sm navbar-dark bg-primary" style="z-index: 999; opacity: 0.9;">
+				<div class="container-fluid">
+					
+					<!--메인 링크-->
+					<a class="navbar-brand" href="main.html">너의 18번을 들려줘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| </a>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarColor01">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item"><!--메인 링크-->
+								<a class="nav-link" href="main.html">홈<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item"><!--공지 링크-->
+								<a class="nav-link" href="notice.html">공지사항</a>
+							</li>
+							<li class="nav-item"><!--차트 링크-->
+								<a class="nav-link" href="chart.html">인기차트</a>
+							</li>
+							<li class="nav-item dropdown"><!--커뮤니티 링크-->
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="best.html" role="button" aria-haspopup="true" aria-expanded="false">커뮤니티</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="best.html">베스트 게시판</a></li>
+									<li><a href="freeboard.html">자유 게시판</a></li>
+									<li><a href="tipboard.html">팁 게시판</a></li>
+									<li><a href="recommend.html">노래 추천</a></li>
+									<li><a href="imSinger.html">전국 노래 자랑</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown"><!--정보 링크-->
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="karaMap.html" role="button" aria-haspopup="true" aria-expanded="false">정보</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="karaMap.html">노래방 맵</a></li>
+									<li><a href="relative.html">관련 사이트</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li class="nav-item">
+								<a class="nav-link login" href="login.html" style="color: white; border: 1px solid #585858;padding: 10px 15px 10px 15px;">로그인</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<!--배너 이미지-->
+			<div class="image-container" style="position: absolute; top: 0; background: black;"><img src="img/hello2.png"></div>
+
+		</header>
+
+		<section>
+			<!--본문 작성-->
+			<div id="content">
+				<div style="text-align: center; padding-top: 200px; padding-bottom: 20px;">
+					<h1 style="font-size: 20pt">zi존보컬님의 개인페이지</h1>
+				</div>
+
+				<hr style="margin-bottom: -2px;border: 0;height: 1px; background: #E6E6E6; clear: both;">
+
+				<div class="container" style="margin-bottom: 100px; margin-top: 50px;">
+					<div class="jumbotron">
+						<span style="float: left; margin-right: 50px;padding-top: 3px;"><h3>zi존보컬</h3></span>
+						<button type="button" class="btn btn-primary btn4" data-follow>팔로우</button>
+						<div class="btn btn-primary btn4" style="border: 1px solid #BDBDBD;background: #fff;color: #BDBDBD;">0</div>
+						<div style="margin-top: 30px; color: #2E2E2E;">
+							<span style="font-weight: bold; margin-right: 20px;">
+								<a href="#" style="text-decoration: none;">포스트 0</a>
+							</span>
+							<span style="font-weight: bold; margin-right: 20px;">
+								<a href="#" style="text-decoration: none;">팔로워 0</a>
+							</span>
+							<span style="font-weight: bold;">
+								<a href="#" style="text-decoration: none;">팔로우 0</a>
+							</span>
+						</div>
+						<hr class="my-4">
+						<div style="margin-top: 30px; color: #2E2E2E;">
+							<p>안녕하세요 대한민국 보컬의 마지막 자존심 지존보컬입니다</p>
+						</div>
+					</div>
+				</div>
+
+				<div style="padding-bottom: 10px; text-align: center;">
+					<h1 style="font-size: 15pt">Zi존보컬님의 애창곡 목록</h1>
+				</div>
+				<hr style="margin-bottom: 50px;border: 0;height: 1px; background: #E6E6E6; clear: both;">
+
+				<div class="container" style="margin-bottom: 200px;">
+					<div class="jumbotron" style="margin-top: 50px;">
+						<table class="table table-hover" style="color: #2E2E2E;">
+							<thead>
+								<tr>
+									<th style="font-weight: bold; font-size: 12pt;">태진</th>
+									<th style="font-weight: bold; font-size: 12pt;">금영</th>
+									<th style="font-weight: bold; font-size: 12pt;">곡명</th>
+									<th style="font-weight: bold; font-size: 12pt;">가수</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr data-delete-list>
+									<td>8797</td>
+									<td>6286</td>
+									<td>Tears</td>
+									<td>소찬휘</td>
+								</tr>
+
+								<tr data-delete-list>
+									<td>46732</td>
+									<td>88725</td>
+									<td>Lazenca, Save Us(우리동네음악대장)</td>
+									<td>하현우</td>
+								</tr>
+
+								<tr data-delete-list>
+									<td>96806</td>
+									<td>49720</td>
+									<td>My Way</td>
+									<td>이수</td>
+								</tr>
+
+							</tbody>
+
+						</table>
+
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!--푸터-->
+		<footer id="footer">
+			<br>
+			<br>
+			<p><a href="#" style="text-decoration: none;">▲ TOP</a></p>
+			<p>Copyright  © 너의 18번을 들려줘 </p>
+		</footer>
+
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>★너의 18번을 들려줘★</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="${R}res/common.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- jQuery -->
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="<c:url value='/js/common.js'/>" charset="utf-8"></script>
+
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!--헤더: 내비게이션 & 배너-->
+		<header id="header" style="height: 600px;">
+			<!--내비게이션-->
+			<nav class="navbar navbar-expand-sm navbar-dark bg-primary" style="z-index: 999; opacity: 0.9;">
+				<div class="container-fluid">
+					
+					<!--메인 링크-->
+					<a class="navbar-brand" href="main.html">너의 18번을 들려줘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| </a>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarColor01">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active"><!--메인 링크-->
+								<a class="nav-link" href="main.html">홈<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item"><!--공지 링크-->
+								<a class="nav-link" href="notice.html">공지사항</a>
+							</li>
+							<li class="nav-item"><!--차트 링크-->
+								<a class="nav-link" href="chart.html">인기차트</a>
+							</li>
+							<li class="nav-item dropdown"><!--커뮤니티 링크-->
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="best.html" role="button" aria-haspopup="true" aria-expanded="false">커뮤니티</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="best.html">베스트 게시판</a></li>
+									<li><a href="freeboard.html">자유 게시판</a></li>
+									<li><a href="tipboard.html">팁 게시판</a></li>
+									<li><a href="recommend.html">노래 추천</a></li>
+									<li><a href="imSinger.html">전국 노래 자랑</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown"><!--정보 링크-->
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="karaMap.html" role="button" aria-haspopup="true" aria-expanded="false">정보</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="karaMap.html">노래방 맵</a></li>
+									<li><a href="relative.html">관련 사이트</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li class="nav-item">
+								<a class="nav-link login" href="login.html" style="color: white; border: 1px solid #585858;padding: 10px 15px 10px 15px;">로그인</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<!--배너 이미지-->
+			<div class="image-container-main" style="position: absolute; top: 0; background: black;"><img src="img/hello2.png"></div>
+
+		</header>
+
+
+		<!--본문-->
+		<section>
+			<div id="content" style="background-image: url('img/bb.png'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+				<div class="container" >
+					<div class="jumbotron" style="padding-top: 200px;padding-bottom: 100px;">
+						<!--곡 검색-->
+						<div style="margin-top: 30px;">
+							<input type="text" class="search-song" id="songName" placeholder="곡 제목 혹은 가수 검색" style="text-align: center;">
+							<div style="text-align: center; margin-top: 30px;">
+								<button type="button" class="btn btn-primary" style="width: 200px;" onclick ="location.href='search.html'">찾기</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="content">
+				<div class="container" style="margin-top: 100px">
+					<div class="jumbotron" style="padding-top: 150px;padding-bottom: 150px; margin-bottom: 0px;">
+						<div class="row" style="margin-right: 0; margin-left: 0">
+							<div style="width: 333px; height: 350px; background: #D8D8D8; margin-left: 0;margin-right: 20px; padding: 60px 30px; text-align: center;">
+								<h2>마이 리스트</h2>
+								<h2>-</h2>
+								<p style="color: #151515; font-weight: 400;">나만의 애창곡 리스트를 통해 더 쉽고 빠르게 노래방을 즐기세요</p>
+								<button type="button" class="btn btn-primary" style="margin-top: 40px; width: 120px;" onclick ="location.href='login.html'">바로 가기</button>
+							</div>
+							<div style="width: 333px; height: 350px; background: #D8D8D8; margin-right: 21px; padding: 60px 30px; text-align: center;">
+								<h2>베스트 게시판</h2>
+								<h2>-</h2>
+								<p style="color: #151515; font-weight: 400;">지금 가장 HOT한 게시글을 읽어보세요</p>
+								<button type="button" class="btn btn-primary" style="margin-top: 40px; width: 120px;" onclick ="location.href='best.html'">바로 가기</button>
+							</div>
+							<div style="width: 333px; height: 350px; background: #D8D8D8; padding: 60px 30px; text-align: center;">
+								<h2>노래방 맵</h2>
+								<h2>-</h2>
+								<p style="color: #151515; font-weight: 400;">내 주변에 있는 노래방을 찾아보세요</p>
+								<button type="button" class="btn btn-primary" style="margin-top: 40px; width: 120px;" onclick ="location.href='karaMap.html'">바로 가기</button>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!--푸터-->
+		<footer id="footer">
+			<br>
+			<br>
+			<p><a href="#" style="text-decoration: none;">▲ TOP</a></p>
+			<p>Copyright  © 너의 18번을 들려줘 </p>
+		</footer>
+
+	</div>
+
+</body>
+</html>

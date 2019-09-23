@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>인기차트</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="${R}res/common.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- jQuery -->
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="<c:url value='/js/common.js'/>" charset="utf-8"></script>
+
+
+</head>
+
+<body>
+<script type="text/javascript" src="javascript/common.js"></script>
+
+	<div id="wrap">
+		<!--헤더: 내비게이션 & 배너-->
+		<header id="header">
+			<!--내비게이션-->
+			<nav class="navbar navbar-expand-sm navbar-dark bg-primary" style="z-index: 999; opacity: 0.9;">
+				<div class="container-fluid">
+					
+					<!--메인 링크-->
+					<a class="navbar-brand" href="main.html">너의 18번을 들려줘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| </a>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarColor01">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item"><!--메인 링크-->
+								<a class="nav-link" href="main.html">홈<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item"><!--공지 링크-->
+								<a class="nav-link" href="notice.html">공지사항</a>
+							</li>
+							<li class="nav-item active"><!--차트 링크-->
+								<a class="nav-link" href="chart.html">인기차트</a>
+							</li>
+							<li class="nav-item dropdown"><!--커뮤니티 링크-->
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="best.html" role="button" aria-haspopup="true" aria-expanded="false">커뮤니티</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="best.html">베스트 게시판</a></li>
+									<li><a href="freeboard.html">자유 게시판</a></li>
+									<li><a href="tipboard.html">팁 게시판</a></li>
+									<li><a href="recommend.html">노래 추천</a></li>
+									<li><a href="imSinger.html">전국 노래 자랑</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown"><!--정보 링크-->
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="karaMap.html" role="button" aria-haspopup="true" aria-expanded="false">정보</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="karaMap.html">노래방 맵</a></li>
+									<li><a href="relative.html">관련 사이트</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li class="nav-item">
+								<a class="nav-link login" href="login.html" style="color: white; border: 1px solid #585858;padding: 10px 15px 10px 15px;">로그인</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<!--배너 이미지-->
+			<div class="image-container" style="position: absolute; top: 0; background: black;"><img src="img/hello2.png"></div>
+
+		</header>
+
+
+		<!--본문-->
+		<section>
+			<div id="content">
+
+				<div style="text-align: center; padding-top: 200px; padding-bottom: 20px;">
+					<h1 style="font-size: 23pt">인기차트</h1>
+				</div>
+
+				<hr style="margin-bottom: -2px;border: 0;height: 1px; background: #E6E6E6; clear: both;">
+
+				<div class="container" style="margin-bottom: 200px; ">
+					<div class="jumbotron" style="margin-top: 50px; background: #FAFAFA;">
+						<table class="table table-hover" style="background: #FAFAFA; color: #2E2E2E;">
+							<thead>
+								<tr data-add-list>
+									<th style="font-weight: bold; font-size: 12pt;">순위</th>
+									<th style="font-weight: bold; font-size: 12pt;">태진</th>
+									<th style="font-weight: bold; font-size: 12pt;">금영</th>
+									<th style="font-weight: bold; font-size: 12pt;">곡명</th>
+									<th style="font-weight: bold; font-size: 12pt;">가수</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr data-add-list>
+									<td>1</td>
+									<td>31754</td>
+									<td>46815</td>
+									<td>링딩동</td>
+									<td>샤이니</td>
+								</tr>
+								<tr data-add-list>
+									<td>2</td>
+									<td>30459</td>
+									<td>46493</td>
+									<td>U R Man</td>
+									<td>SS501</td>
+								</tr>
+								<tr data-add-list>
+									<td>3</td>
+									<td>84145</td>
+									<td>79942</td>
+									<td>쏘리 쏘리</td>
+									<td>슈퍼주니어</td>
+								</tr>
+								<tr data-add-list>
+									<td>4</td>
+									<td>97112</td>
+									<td>90844</td>
+									<td>뿜뿜</td>
+									<td>모모랜드</td>
+								</tr>
+							</tbody>
+
+						</table>
+
+					</div>
+				</div>
+
+			</div>
+			
+		</section>
+
+		<!--푸터-->
+		<footer id="footer">
+			<br>
+			<br>
+			<p><a href="#" style="text-decoration: none;">▲ TOP</a></p>
+			<p>Copyright  © 너의 18번을 들려줘 </p>
+		</footer>
+		
+	</div>
+
+</body>
+</html>
