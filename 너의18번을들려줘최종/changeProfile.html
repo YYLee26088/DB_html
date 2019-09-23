@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>정보 수정</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="javascript/common.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- jQuery -->
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="<c:url value='/js/common.js'/>" charset="utf-8"></script>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<!--헤더: 내비게이션 & 배너-->
+		<header id="header">
+			<!--내비게이션-->
+			<nav class="navbar navbar-expand-sm navbar-dark bg-primary" style="z-index: 999; opacity: 0.9;">
+				<div class="container-fluid">
+					
+					<!--메인 링크-->
+					<a class="navbar-brand" href="main.html">너의 18번을 들려줘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| </a>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarColor01">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item"><!--메인 링크-->
+								<a class="nav-link" href="main.html">홈<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item"><!--공지 링크-->
+								<a class="nav-link" href="notice.html">공지사항</a>
+							</li>
+							<li class="nav-item"><!--차트 링크-->
+								<a class="nav-link" href="chart.html">인기차트</a>
+							</li>
+							<li class="nav-item dropdown"><!--커뮤니티 링크-->
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="best.html" role="button" aria-haspopup="true" aria-expanded="false">커뮤니티</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="best.html">베스트 게시판</a></li>
+									<li><a href="freeboard.html">자유 게시판</a></li>
+									<li><a href="tipboard.html">팁 게시판</a></li>
+									<li><a href="recommend.html">노래 추천</a></li>
+									<li><a href="imSinger.html">전국 노래 자랑</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown"><!--정보 링크-->
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="karaMap.html" role="button" aria-haspopup="true" aria-expanded="false">정보</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="karaMap.html">노래방 맵</a></li>
+									<li><a href="relative.html">관련 사이트</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li class="nav-item">
+								<a class="nav-link login" href="login.html" style="color: white; border: 1px solid #585858;padding: 10px 15px 10px 15px;">로그인</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</nav>
+			
+			<!--배너 이미지-->
+			<div class="image-container" style="position: absolute; top: 0; background: black;"><img src="img/hello2.png"></div>
+
+		</header>
+
+		<section>
+			<!--본문 작성-->
+			<div id="content">
+				<div style="text-align: center; padding-top: 200px; padding-bottom: 20px;">
+					<h1 style="font-size: 23pt">정보 수정</h1>
+				</div>
+
+				<hr style="margin-bottom: -2px; border: 0;height: 1px; background: #E6E6E6; clear: both;">
+
+				<div class="container" style="margin-bottom: 200px; margin-top: 50px;">
+					<div class="jumbotron">
+						<span style="margin-right: 10px; padding-top: 0px;"><h3>zi존보컬</h3></span>
+
+						<div style="margin-top: 10px; color: #2E2E2E;">
+							<label class="col-form-label" for="message">한줄소개</label>
+							<input type="text" class = "form-control" id="message" placeholder="한줄 소개를 입력하세요" value="안녕하세요 대한민국 보컬의 마지막 자존심 지존보컬입니다">
+						</div>
+
+						<hr class="my-4" style="margin-top: 200px;">
+
+						<div class="form-group" style="width: 400px; margin: 50px 0 100px 0;">
+							<label class="col-form-label" for="inputNickname">닉네임 변경</label>
+							<input type="text" class="form-control" placeholder="닉네임 변경" id="inputNickname" value="zi존보컬">
+
+							<label class="col-form-label" for="inputPassword1">새 비밀번호</label>
+							<input type="password" class="form-control" id="inputPassword1" placeholder="새 비밀번호">
+
+							<label class="col-form-label" for="inputPassword1">비밀번호 확인</label>
+							<input type="password" class="form-control" id="inputPassword1" placeholder="비밀번호 확인">
+						</div>
+
+						<hr class="my-4" style="margin-top: 200px;">
+
+						<div style="text-align: center; margin-top: 130px;">
+							<button type="button" class="btn btn-primary btn2" style="width: 100px;" onclick ="location.href='user.html'" data-cancel-profile>취소</button>
+							<button type="button" class="btn btn-primary" style="width: 100px;" onclick ="location.href='user.html'" data-change-profile>등록</button>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!--푸터-->
+		<footer id="footer">
+			<br>
+			<br>
+			<p><a href="#" style="text-decoration: none;">▲ TOP</a></p>
+			<p>Copyright  © 너의 18번을 들려줘 </p>
+		</footer>
+
+
+	</div>
+</body>
+
+</html>

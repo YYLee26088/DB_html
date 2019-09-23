@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>아이디 찾기</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="${R}res/common.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- jQuery -->
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="<c:url value='/js/common.js'/>" charset="utf-8"></script>
+
+
+</head>
+
+<body>
+	<div id="wrap" style="background-image: url('img/bg3.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+		<!--헤더: 내비게이션 & 배너-->
+		<header>
+			<!--내비게이션-->
+			<nav class="navbar navbar-expand-sm navbar-dark bg-primary" style="z-index: 999; opacity: 0.9;">
+				<div class="container-fluid">
+					<!--메인 링크-->
+					<a class="navbar-brand" href="main.html">너의 18번을 들려줘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| </a>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarColor01">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item"><!--메인 링크-->
+								<a class="nav-link" href="main.html">홈<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item"><!--공지 링크-->
+								<a class="nav-link" href="notice.html">공지사항</a>
+							</li>
+							<li class="nav-item"><!--차트 링크-->
+								<a class="nav-link" href="chart.html">인기차트</a>
+							</li>
+							<li class="nav-item dropdown"><!--커뮤니티 링크-->
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="best.html" role="button" aria-haspopup="true" aria-expanded="false">커뮤니티</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="best.html">베스트 게시판</a></li>
+									<li><a href="freeboard.html">자유 게시판</a></li>
+									<li><a href="tipboard.html">팁 게시판</a></li>
+									<li><a href="recommend.html">노래 추천</a></li>
+									<li><a href="imSinger.html">전국 노래 자랑</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown"><!--정보 링크-->
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="karaMap.html" role="button" aria-haspopup="true" aria-expanded="false">정보</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="karaMap.html">노래방 맵</a></li>
+									<li><a href="relative.html">관련 사이트</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li class="nav-item">
+								<a class="nav-link login" href="login.html" style="color: white; border: 1px solid #585858;padding: 10px 15px 10px 15px;">로그인</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+		</header>
+
+
+		<!--본문-->
+		<section>
+			<div id="content">
+				<div class="container-fluid">
+					<div style="margin: 300px 600px 200px; width: 700px;background-color:rgba( 255, 255, 255, 0.8 ); padding: 100px;">
+						<form>
+							<fieldset style="color: #585858">
+								<legend><h1 style="color: #1C1C1C">아이디 찾기</h1></legend>
+								<p><small>아이디를 찾기 위해 아래 정보를 입력하세요</small></p>
+								<hr style="margin-bottom: 20px;">
+								<div class="form-group">
+									<label for="inputEmail1">이메일 주소</label>
+									<input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="이메일 주소 입력" required>
+								</div>
+								<button type="submit" class="btn btn-primary btn-block" onclick ="button1_click();return false" style="margin-top: 20px;">다음 단계
+								</button>
+<script type="text/javascript">
+                function button1_click() {
+	
+var id=$('#inputEmail1').val();
+if(id!='') {
+location.href='findIdNext.html';
+}
+else {
+document.getElementById('inputEmail1').required=required;
+}
+}
+</script>
+							</fieldset>
+						</form>
+					</div>
+					
+				</div>
+
+			</div>
+			
+		</section>
+
+		<!--푸터-->
+		<footer id="footer">
+			<br>
+			<br>
+			<p><a href="#" style="text-decoration: none;">▲ TOP</a></p>
+			<p>Copyright  © 너의 18번을 들려줘 </p>
+		</footer>
+		
+	</div>
+
+</body>
+</html>
